@@ -1,0 +1,17 @@
+.container-item{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap; 
+}
+.background-img{
+    background-image: url('../images/house21.jpg');
+    height:661px;
+    width:100%;
+}
+.container-logo{
+    display: flex;
+    justify-content: center;
+    
+}
