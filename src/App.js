@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MenuBar from './menu-bar/MenuBar';
+import MenuBar from './header/menu-bar/MenuBar';
+import GalleryBoxes from './boxes/gallery-boxes/GalleryBoxes';
 
 
 
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
        
         <MenuBar/>
+        <GalleryBoxes/>
       </div>
     );
   }

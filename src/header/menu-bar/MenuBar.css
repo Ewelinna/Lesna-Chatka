@@ -6,7 +6,7 @@
     flex-wrap: wrap; 
 }
 .background-img{
-    background-image: url('../images/house21.jpg');
+    background-image: url('../../images/house21.jpg');
     height:661px;
     width:100%;
 }
