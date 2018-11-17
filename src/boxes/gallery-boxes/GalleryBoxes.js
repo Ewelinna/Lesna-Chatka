@@ -13,9 +13,9 @@ class GalleryBoxes extends Component {
                 </div>
 
                 <div className="container-boxes">
-                    <GalleryBox picture="bed"/>
-                    <GalleryBox picture="plant"/>
-                    <GalleryBox picture="salon"/>
+                    <GalleryBox picture="kid"/>
+                    <GalleryBoxWithButtom picture="fireplace"/>
+                    <GalleryBox picture="livingroom"/>
                 </div>
             </div>
         )

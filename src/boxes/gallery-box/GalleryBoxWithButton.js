@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 
-import bed from "../../images/bed.jpg"
-import salon from "../../images/salon.jpg"
-import plant from "../../images/plant.jpg"
+import kid from "../../images/kid.jpg"
+import fireplace from "../../images/fireplace.jpg"
+import livingroom from "../../images/livingroom.jpg"
 
 
 
@@ -12,14 +12,14 @@ class GalleryBoxWithButton extends Component {
         let chosenPicture;
 
         switch(this.props.picture){
-            case "bed":
-                chosenPicture=bed;
+            case "kid":
+                chosenPicture=kid;
                 break;
-            case "plant":
-                chosenPicture=plant;
+            case "fireplace":
+                chosenPicture=fireplace;
                 break;
-            case "salon":
-                chosenPicture=salon;
+            case "livingroom":
+                chosenPicture=livingroom;
                 break;
     
 
