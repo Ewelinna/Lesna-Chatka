@@ -1,4 +1,4 @@
-.button-item > button{
+.button-item {
     display: inline-block;
     color:#fff;
     text-decoration: none;
@@ -9,6 +9,6 @@
     background-color: #E7AE46;
     border:none;
 }
-.button-item>button:hover{
+.button-item:hover{
     background-color: #ebbe6a;
 }
