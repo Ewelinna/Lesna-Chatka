@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './GalleryBoxes.css';
 import GalleryBox from '../gallery-box/GalleryBox';
-import GalleryBoxWithButtom from '../gallery-box/GalleryBoxWithButton';
+
 class GalleryBoxes extends Component {
     render() {
         return (
@@ -11,12 +11,15 @@ class GalleryBoxes extends Component {
                         Leśna Chatka jest idealnym miejscem dla pragnących uciec od miejskiego <br/> zgiełku i odpocząć w otoczeniu dzikiej natury.
                     </p>
                 </div>
+                <div className="horizontal-line"></div>
 
                 <div className="container-boxes">
                     <GalleryBox picture="kid"/>
-                    <GalleryBoxWithButtom picture="fireplace"/>
+                    <GalleryBox picture="fireplace"/>
                     <GalleryBox picture="livingroom"/>
                 </div>
+
+                
             </div>
         )
     }

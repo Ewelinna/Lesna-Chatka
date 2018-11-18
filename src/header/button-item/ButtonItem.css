@@ -1,0 +1,14 @@
+.button-item > button{
+    display: inline-block;
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 8px 18px;
+    background-color: #E7AE46;
+    border:none;
+}
+.button-item>button:hover{
+    background-color: #ebbe6a;
+}

@@ -16,3 +16,16 @@
     
     
 }
+.horizontal-line{
+    position: absolute;
+    background-color: #E7AE46;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 4px;
+    bottom: 30px;
+}
+.gallery-link{
+    
+}

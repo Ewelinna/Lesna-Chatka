@@ -10,8 +10,12 @@
     height:661px;
     width:100%;
 }
-.container-logo{
+.container-logo {
     display: flex;
     justify-content: center;
     
+}
+.container-button{
+    display: flex;
+    justify-content:center;
 }

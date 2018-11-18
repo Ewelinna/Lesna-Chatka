@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './MenuBar.css';
 import MenuItem from '../menu-item/MenuItem';
 import LogoItem from '../logo/LogoItem';
-
+import ButtonItem from '../button-item/ButtonItem';
 class MenuBar extends Component{
     render(){
         return(
@@ -21,6 +21,10 @@ class MenuBar extends Component{
                
                 <div className="container-logo">
                 <LogoItem logoText={"Leśna Chatka"}/>
+                </div>
+
+                <div className="container-button">
+                <ButtonItem buttonName={"Rezerwuj"}/>
                 </div>
       
             </header>
