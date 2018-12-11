@@ -6,8 +6,8 @@ class ButtonItem extends Component {
   render() {
     return (
       <div>
-        <Link to="/rezerwacja/">
-          <button className="button-item" type="button">{this.props.buttonName}</button>
+        <Link className="button-item" to="/admin/">
+          <button  type="button">{this.props.buttonName}</button>
         </Link>
       </div>
     );

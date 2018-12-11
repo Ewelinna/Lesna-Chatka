@@ -1,9 +1,10 @@
 
 
 import React, { Component } from "react";
+import "./BookingPageAdmin.css";
 import Reservation from './Reservation';
 
-class BookingPage extends Component {
+class BookingPageAdmin extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,10 +32,13 @@ class BookingPage extends Component {
   }
   render() {
     return (
-      <div>
-        <ul>
+      <div className="booking-admin">
+      <div className="title"> <p>Zarządzaj rezerwacjami</p></div>
+        
         {this.state.reservationsToShow.map((oneReservation, index) => {
           return( 
+           
+            
               <Reservation
               reservingUserName={oneReservation.reservingUserName} 
               reservingFrom= {oneReservation.reservingFrom} 
@@ -43,17 +47,18 @@ class BookingPage extends Component {
               deleteEvent={this.deleteReservationItem.bind(this, index)}
               >
               </Reservation>
+              
             
 
           )
           })}
-        </ul>
-      </div>
+        </div>
+      
     );
   }
 }
 
-export default BookingPage;
+export default BookingPageAdmin;
 
 // import React, { Component } from "react";
 

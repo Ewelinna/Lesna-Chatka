@@ -1,15 +1,18 @@
 import React from 'react';
+import './Reservation.css';
 
 const reservation = (props) =>{
     return(
-    <li>
+    <div>
+    <div className= "reservation-admin">
     <span>
-    Zarezerwowane przez:{props.reservingUserName},
-    Zarezerwowane od:{props.reservingFrom},
-    Zarezerwowane do:{props.reservingTo}
+    <li>Zarezerwowane przez: <strong>{props.reservingUserName}</strong></li>
+    <li>Zarezerwowane od: <strong>{props.reservingFrom} </strong></li>
+    <li>Zarezerwowane do: <strong>{props.reservingTo}</strong></li>
     </span>
-    <button onClick={props.deleteEvent}>Delete</button>
-    </li>
+    <button className="button-delete" onClick={props.deleteEvent}>Delete</button>
+    </div>
+    </div>
 
     )
 }

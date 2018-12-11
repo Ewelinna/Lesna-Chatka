@@ -5,7 +5,7 @@ import MenuBar from "./header/menu-bar/MenuBar";
 import GalleryBoxes from "./boxes/gallery-boxes/GalleryBoxes";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import MainPage from "./pages/HomePage/HomePage";
-import BookingPage from "./pages/BookingPage/BookingPage";
+import BookingPageAdmin from "./pages/BookingPage/BookingPageAdmin";
 
 
 
@@ -15,7 +15,7 @@ class App extends Component {
       <Router>
         <div>
           <Switch>
-            <Route path="/rezerwacja/" component={BookingPage} />
+            <Route path="/admin/" component={BookingPageAdmin} />
             <Route path="/" component={MainPage} />
           </Switch>
         </div>

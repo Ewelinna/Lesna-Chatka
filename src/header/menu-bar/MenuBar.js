@@ -6,25 +6,26 @@ import ButtonItem from "../button-item/ButtonItem";
 class MenuBar extends Component {
   render() {
     return (
-      <header className="background-img">
-        <nav>
-          <ul className="container-item">
+
+        <header className="background-img">
+          <ul className="container-menu">
             <MenuItem name={"HOME"} />
             <MenuItem name={"GALERIA"} />
             <MenuItem name={"CENNIK"} />
             <MenuItem name={"OKOLICA"} />
             <MenuItem name={"KONTAKT"} />
           </ul>
-        </nav>
 
-        <div className="container-logo">
-          <LogoItem logoText={"Leśna Chatka"} />
-        </div>
+          
+            <div className="logo-item">
+              <LogoItem logoText={"Leśna Chatka"} />
+            </div>
 
-        <div className="container-button">
-          <ButtonItem buttonName={"Rezerwuj"} />
-        </div>
-      </header>
+            <div className="button-item">
+              <ButtonItem buttonName={"Rezerwuj"} />
+            </div>
+          
+        </header>
     );
   }
 }

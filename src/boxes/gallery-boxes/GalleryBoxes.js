@@ -6,8 +6,8 @@ class GalleryBoxes extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <p className="container-content">
+                <div className="container-content">
+                    <p>
                         Leśna Chatka jest idealnym miejscem dla pragnących uciec od miejskiego <br/> zgiełku i odpocząć w otoczeniu dzikiej natury.
                     </p>
                 </div>

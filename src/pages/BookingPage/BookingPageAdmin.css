@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.booking-admin {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.title {
+  height: 15vh;
+  flex-basis: 100%;
+  line-height: 15vh;
+  font-size: 3vh;
+  border-bottom: solid 1px #e7ae46;
+  text-align: center;
+}
