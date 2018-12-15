@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './GalleryBoxes.css';
-import GalleryBox from '../gallery-box/GalleryBox';
+import GalleryBox from '../../components/gallery-box/GalleryBox';
 
 class GalleryBoxes extends Component {
     render() {
         return (
-            <div>
-                <div className="container-content">
+            <div className="text-boxes">
+                <div className="short-text">
                     <p>
                         Leśna Chatka jest idealnym miejscem dla pragnących uciec od miejskiego <br/> zgiełku i odpocząć w otoczeniu dzikiej natury.
                     </p>

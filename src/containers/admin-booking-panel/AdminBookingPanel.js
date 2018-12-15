@@ -1,10 +1,10 @@
 
 
 import React, { Component } from "react";
-import "./BookingPageAdmin.css";
-import Reservation from './Reservation';
+import "./AdminBookingPanel.css";
+import AdminBookingItem from '../admin-booking-item/AdminBookingItem';
 
-class BookingPageAdmin extends Component {
+class AdminBookingPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,14 +39,14 @@ class BookingPageAdmin extends Component {
           return( 
            
             
-              <Reservation
+              <AdminBookingItem
               reservingUserName={oneReservation.reservingUserName} 
               reservingFrom= {oneReservation.reservingFrom} 
               reservingTo={oneReservation.reservingTo}
               key={oneReservation.id}
               deleteEvent={this.deleteReservationItem.bind(this, index)}
               >
-              </Reservation>
+              </AdminBookingItem>
               
             
 
@@ -58,7 +58,7 @@ class BookingPageAdmin extends Component {
   }
 }
 
-export default BookingPageAdmin;
+export default AdminBookingPanel;
 
 // import React, { Component } from "react";
 

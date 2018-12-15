@@ -1,5 +1,5 @@
 import MenuBar from "../../header/menu-bar/MenuBar";
-import GalleryBoxes from "../../boxes/gallery-boxes/GalleryBoxes";
+import GalleryBoxes from "../../containers/gallery-boxes/GalleryBoxes";
 import React, { Component } from "react";
 
 export default function HomePage() {
