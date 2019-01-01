@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.nav-bar-item{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    height:9vh;
+    width: 100%;
+    line-height: 9vh;
+    align-items: center;
+    position: fixed;
+}

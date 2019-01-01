@@ -1,0 +1,28 @@
+.reservation-panel{
+    margin-top: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+
+   
+}
+.guest-selector{
+    color:orange;
+    padding-right: 20px;
+}
+
+/* .guest-selector > div > div.default.text {
+    color: pink !important; */
+    
+/* } */
+.day-picker > div > input{
+    padding: 9px;
+    
+}
+.day-picker{
+    padding-right:20px;
+    padding-left: 20px;
+   
+}

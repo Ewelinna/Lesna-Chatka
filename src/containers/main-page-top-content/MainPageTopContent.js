@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./MenuBar.css";
-import MenuItem from "../menu-item/MenuItem";
-import LogoItem from "../logo/LogoItem";
-import ButtonItem from "../button-item/ButtonItem";
+import "./MainPageTopContent.css";
+import MenuItem from "../../components/menu-item/MenuItem";
+import LogoItem from "../../components/logo/LogoItem";
+import ButtonItem from "../../components/button-item/ButtonItem";
 class MenuBar extends Component {
   render() {
     return (

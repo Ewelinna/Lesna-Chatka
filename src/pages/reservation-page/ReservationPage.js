@@ -1,22 +1,19 @@
-// import React, {Component} from "react";
-
-// class ReservationPage extends Component{
-//     render (){
-//         return(
-//             <header>
-//             <ul className="container-menu-bar">
-//               <MenuBarItem name={"HOME"} />
-//               <MenuBarItem name={"GALERIA"} />
-//               <MenuBarItem name={"CENNIK"} />
-//               <MenuBarItem name={"OKOLICA"} />
-//               <MenuBarItem name={"KONTAKT"} />
-//             </ul>
-            
-//           </header>
-//         )
-//     }
-// }
+import React, { Component } from "react";
+import NavBar from "../../components/nav-bar/NavBar";
+import ReservationPanel from "../../containers/reservation-panel/ReservationPanel";
 
 
 
-// export default ReservationPage;
+class ReservationPage extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar />;
+        <ReservationPanel/>
+        
+
+      </div>
+    );
+  }
+}
+export default ReservationPage;
