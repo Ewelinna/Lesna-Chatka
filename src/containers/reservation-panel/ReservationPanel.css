@@ -1,28 +1,37 @@
-.reservation-panel{
-    margin-top: 200px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-   
-
-   
-}
-.guest-selector{
-    color:orange;
-    padding-right: 20px;
+.reservation-panel {
+  margin-top: 40vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* .guest-selector > div > div.default.text {
-    color: pink !important; */
-    
-/* } */
-.day-picker > div > input{
-    padding: 9px;
-    
+/* .day-picker > div > input {
+  margin-left: 9px;
+} */
+/* .day-picker {
+  padding-right: 20px;
+  padding-left: 20px;
+  color:pink;
+} */
+
+button.booking-button {
+  color: rgb(255, 255, 255);
+  background-color: #e7ae46;
+  border-color: #e7ae46;
+  height: 48px;
+  margin-left: 10px;
+
 }
-.day-picker{
-    padding-right:20px;
-    padding-left: 20px;
-   
+.number-selector {
+  width: 200px;
+  margin-left: 20px;
 }
+.day-picker>div{
+    background-color: red;
+}
+div.reset-margin{
+    margin:0 20px;
+ 
+}
+
