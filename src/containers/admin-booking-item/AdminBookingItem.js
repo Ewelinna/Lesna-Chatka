@@ -6,6 +6,7 @@ const AdminBookingItem = props => {
     <div>
       <div className="reservation-admin">
         <span>
+        
           <li>
             Zarezerwowane przez: <strong>{props.reservingUserName}</strong>
           </li>

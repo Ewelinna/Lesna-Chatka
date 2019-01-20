@@ -7,21 +7,25 @@ class AdminBookingPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      reservationsToShow: []
+      reservationsToShow: [],
+      
     };
   }
 
   componentDidMount() {
-    axios.get("http://localhost:3001/reservations").then(response => {
-      const reservationsToShow = response.data;
+    axios.get("http://localhost:3001/reservations").then(res => {
+      const reservationsToShow = res.data;
       this.setState({ reservationsToShow });
     });
   }
+ deleteReservationItem = (id, e) => {
+    console.log(id);
 
-  deleteReservationItem = (index, e) => {
-    const reservationsToShow = Object.assign([], this.state.reservationsToShow);
-    reservationsToShow.splice(index, 1);
-    this.setState({ reservationsToShow: reservationsToShow });
+    axios.delete(`http://localhost:3001/reservations/${id}`)
+    .then(res => {
+      console.log(res);
+      console.log(res.data);
+    })
   };
   render() {
     return (
@@ -34,11 +38,12 @@ class AdminBookingPanel extends Component {
         {this.state.reservationsToShow.map((oneReservation, index) => {
           return (
             <AdminBookingItem
+           
               reservingUserName={oneReservation.reservingUser}
               reservingFrom={oneReservation.reservingFrom}
               reservingTo={oneReservation.reservingTo}
               key={oneReservation.id}
-              deleteEvent={this.deleteReservationItem.bind(this, index)}
+              deleteEvent={this.deleteReservationItem.bind(this, oneReservation.id)}
             />
           );
         })}
