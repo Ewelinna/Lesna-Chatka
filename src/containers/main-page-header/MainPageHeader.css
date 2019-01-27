@@ -11,18 +11,22 @@
 }
 .background-img {
   background-image: url("../../images/house21.jpg");
-
-  width: 100%;
+width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-position: center;
 }
 .logo-item{
-    margin-top:130px;
+    margin-top:18vh;
     padding: 10px;
 }
 .button-item{
     margin-bottom: 10px;
+}
+
+.container-menu>li{
+  padding-top: 40px;
 }
 
 

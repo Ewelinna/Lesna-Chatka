@@ -5,12 +5,13 @@
   }
 .nav-bar-item{
     background-color: black;
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
-    height:9vh;
-    width: 100%;
-    line-height: 9vh;
-    align-items: center;
-    position: fixed;
+    flex-wrap: wrap;
+   
+  }
+
+.nav-bar-item>a{
+  text-decoration: none
 }

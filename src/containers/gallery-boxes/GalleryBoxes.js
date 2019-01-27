@@ -18,6 +18,9 @@ class GalleryBoxes extends Component {
                     <GalleryBox picture="fireplace"/>
                     <GalleryBox picture="livingroom"/>
                 </div>
+                
+                <a className="gallery-link" href="#">Odkryj więcej zdjęć > </a>
+              
 
                 
             </div>

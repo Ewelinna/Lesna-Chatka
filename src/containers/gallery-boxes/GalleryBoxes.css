@@ -23,3 +23,13 @@
   margin-top: 0;
   margin-bottom: 22px;
 }
+.gallery-link {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 17px;
+  color: #e7ae46;
+  text-decoration: none;
+  align-self: flex-end;
+  margin:6px 230px 40px 0;
+ 
+}

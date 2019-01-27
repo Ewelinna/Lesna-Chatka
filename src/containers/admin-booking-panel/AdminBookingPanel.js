@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import "./AdminBookingPanel.css";
-import AdminBookingItem from "../admin-booking-item/AdminBookingItem";
+import AdminBookingItem from "../../components/admin-booking-item/AdminBookingItem";
 import axios from "axios";
 
 class AdminBookingPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      reservationsToShow: [],
-      
+      reservationsToShow: []
     };
   }
 
@@ -18,14 +17,23 @@ class AdminBookingPanel extends Component {
       this.setState({ reservationsToShow });
     });
   }
- deleteReservationItem = (id, e) => {
+  deleteReservationItem = (id, e) => {
     console.log(id);
 
-    axios.delete(`http://localhost:3001/reservations/${id}`)
-    .then(res => {
+    axios.delete(`http://localhost:3001/reservations/${id}`).then(res => {
+      let reservationsToShow = Object.assign(
+        [],
+        this.state.reservationsToShow
+      );
+      reservationsToShow = reservationsToShow.filter(reservation => reservation.id != id);
+
+      this.setState({ reservationsToShow: reservationsToShow });
+
       console.log(res);
       console.log(res.data);
-    })
+    });
+ 
+
   };
   render() {
     return (
@@ -35,15 +43,17 @@ class AdminBookingPanel extends Component {
           <p>Zarządzaj rezerwacjami</p>
         </div>
 
-        {this.state.reservationsToShow.map((oneReservation, index) => {
+        {this.state.reservationsToShow.map(oneReservation => {
           return (
             <AdminBookingItem
-           
               reservingUserName={oneReservation.reservingUser}
               reservingFrom={oneReservation.reservingFrom}
               reservingTo={oneReservation.reservingTo}
               key={oneReservation.id}
-              deleteEvent={this.deleteReservationItem.bind(this, oneReservation.id)}
+              deleteEvent={this.deleteReservationItem.bind(
+                this,
+                oneReservation.id
+              )}
             />
           );
         })}

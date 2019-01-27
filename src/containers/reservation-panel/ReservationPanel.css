@@ -1,37 +1,48 @@
+
 .reservation-panel {
-  margin-top: 40vh;
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  flex-wrap: wrap;
+  min-height: 80px;
+  padding: 30px;
+  border: 1px solid black;
+  width: 30vw;
+  /* margin: 200px; */
+  background-color: #fff;
+  margin: 70px;
 }
 
-/* .day-picker > div > input {
-  margin-left: 9px;
-} */
-/* .day-picker {
-  padding-right: 20px;
-  padding-left: 20px;
-  color:pink;
-} */
+.background-image {
+  background-image: url("../../images/paprotka.jpg");
+  background-position: center;
+  background-size: 90vw 80vh;
+  background-repeat: no-repeat;
 
+  margin: 20vh auto;
+  display: flex;
+  justify-content: center;
+}
 button.booking-button {
   color: rgb(255, 255, 255);
   background-color: #e7ae46;
   border-color: #e7ae46;
   height: 48px;
-  margin-left: 10px;
-
+  margin: 0 20px;
 }
 .number-selector {
-  width: 200px;
-  margin-left: 20px;
+  width: 50%;
+  margin: 0 20px;
 }
-.day-picker>div{
-    background-color: red;
+
+div.reset-margin {
+  margin: 0 20px;
 }
-div.reset-margin{
-    margin:0 20px;
- 
+div.text-field {
+  margin: 0 20px;
+  
+}
+.date-picker-container{
+  display: flex;
 }
 
