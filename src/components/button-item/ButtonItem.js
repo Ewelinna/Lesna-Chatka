@@ -7,7 +7,7 @@ class ButtonItem extends Component {
     return (
       <div>
         <Link className="button-item" to="/rezerwacja/">
-          <button  type="button">{this.props.buttonName}</button>
+          <button onClick={this.props.onClick}>{this.props.buttonName}</button>
         </Link>
       </div>
     );

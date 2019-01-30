@@ -7,7 +7,7 @@
   min-height: 80px;
   padding: 30px;
   border: 1px solid black;
-  width: 30vw;
+  min-width: 28vw;
   /* margin: 200px; */
   background-color: #fff;
   margin: 70px;
@@ -23,15 +23,15 @@
   display: flex;
   justify-content: center;
 }
-button.booking-button {
+/* button.booking-button {
   color: rgb(255, 255, 255);
   background-color: #e7ae46;
   border-color: #e7ae46;
   height: 48px;
-  margin: 0 20px;
-}
-.number-selector {
-  width: 50%;
+  margin: 0 50px;
+} */
+div.number-selector {
+  width: 40%;
   margin: 0 20px;
 }
 

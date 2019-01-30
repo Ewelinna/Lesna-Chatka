@@ -8,8 +8,8 @@ import FormControl from "@material-ui/core/FormControl";
 import DateFnsUtils from "@date-io/date-fns";
 import TextField from "@material-ui/core/TextField";
 import ButtonItem from "../../components/button-item/ButtonItem";
-
 import { MuiPickersUtilsProvider, DatePicker } from "material-ui-pickers";
+import axios from "axios";
 
 class ReservationPanel extends Component {
   constructor(props) {
@@ -28,17 +28,32 @@ class ReservationPanel extends Component {
   handleDateToChange = date => {
     this.setState({ selectedDateTo: date });
   };
-  handleChange = event => {
+  handleNumberChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
-  handleTextFieldChange = name => event => {
+  handleTextFieldChange = stateKeyName => event => {
     this.setState({
-      [name]: event.target.value
+      [stateKeyName]: event.target.value
     });
   };
-  handleTextFieldChange = email => event => {
-    this.setState({
-      [email]: event.target.value
+
+  
+
+  handleSubmit = event => {
+    event.preventDefault();
+    console.log("halooo");
+    
+    const guest = {
+      name: this.state.name,
+      email:this.state.email,
+      numberOfGuests:this.state.numberOfGuests,
+      selectedDateFrom:this.state.selectedDateFrom,
+      selectedDateTo:this.state.selectedDateTo
+    };
+
+    axios.post(`http://localhost:3001/reservations`, { guest }).then(res => {
+      console.log(res);
+      console.log(res.data);
     });
   };
 
@@ -46,29 +61,28 @@ class ReservationPanel extends Component {
     const { selectedDateFrom, selectedDateTo } = this.state;
 
     return (
-      <form className="reservation-panel-container">
+      <form onSubmit={this.handleSubmit}>
         <div className="background-image">
           <div className="reservation-panel">
-        
             <MuiPickersUtilsProvider
               utils={DateFnsUtils}
               className="day-picker"
             >
-            <div className="date-picker-container">
-              <DatePicker
-                margin="normal"
-                label="Od"
-                value={selectedDateFrom}
-                onChange={this.handleDateFromChange}
-                className="reset-margin"
-              />
-              <DatePicker
-                margin="normal"
-                label="Do"
-                value={selectedDateTo}
-                onChange={this.handleDateToChange}
-                className="reset-margin"
-              />
+              <div className="date-picker-container">
+                <DatePicker
+                  margin="normal"
+                  label="Od"
+                  value={selectedDateFrom}
+                  onChange={this.handleDateFromChange}
+                  className="reset-margin"
+                />
+                <DatePicker
+                  margin="normal"
+                  label="Do"
+                  value={selectedDateTo}
+                  onChange={this.handleDateToChange}
+                  className="reset-margin"
+                />
               </div>
             </MuiPickersUtilsProvider>
             <TextField
@@ -94,7 +108,7 @@ class ReservationPanel extends Component {
                 <InputLabel htmlFor="age-simple">Liczba gości</InputLabel>
                 <Select
                   value={this.state.numberOfGuests}
-                  onChange={this.handleChange}
+                  onChange={this.handleNumberChange}
                   inputProps={{
                     name: "numberOfGuests",
                     id: "age-simple"
@@ -113,7 +127,7 @@ class ReservationPanel extends Component {
                 </Select>
               </FormControl>
             </div>
-            <ButtonItem buttonName={"Rezerwuj"} />
+            <ButtonItem buttonName={"Rezerwuj"} onClick={this.handleSubmit}/>
 
             {/*<Button variant="contained" className="booking-button">
               Rezerwuj
