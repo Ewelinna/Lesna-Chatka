@@ -8,15 +8,15 @@ class GalleryBoxes extends Component {
             <div className="text-boxes">
                 <div className="short-text">
                     <p>
-                        Leśna Chatka jest idealnym miejscem dla pragnących uciec od miejskiego <br/> zgiełku i odpocząć w otoczeniu dzikiej natury.
+                        Leśna Chatka jest idealnym miejscem dla tych, którzy pragną uciec od miejskiego <br/> zgiełku i odpocząć w otoczeniu natury.
                     </p>
                 </div>
                 <div className="horizontal-line"></div>
 
                 <div className="container-boxes">
-                    <GalleryBox picture="kid"/>
                     <GalleryBox picture="fireplace"/>
-                    <GalleryBox picture="livingroom"/>
+                    <GalleryBox picture="lamp"/>
+                    <GalleryBox picture="mirror"/>
                 </div>
                 
                 <a className="gallery-link" href="#">Odkryj więcej zdjęć > </a>

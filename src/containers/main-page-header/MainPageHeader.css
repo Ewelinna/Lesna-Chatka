@@ -1,8 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .container-menu {
   width: 100%;
   display: flex;
@@ -11,24 +6,25 @@
 }
 .background-img {
   background-image: url("../../images/house21.jpg");
-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-position: center;
 }
-.logo-item{
-    margin-top:18vh;
-    padding: 10px;
+.logo-item {
+  margin-top: 14vh;
+ 
 }
-.button-item{
-    margin-bottom: 10px;
+.button-item {
+  margin-bottom: 27px;
 }
 
-.container-menu>li{
+.container-menu > li {
   padding-top: 40px;
 }
-
 
 @media screen and (min-width: 800px) {
   .background-img {

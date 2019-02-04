@@ -1,14 +1,16 @@
-
+.reservation-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
 .reservation-panel {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
-  min-height: 80px;
   padding: 30px;
   border: 1px solid black;
   min-width: 28vw;
-  /* margin: 200px; */
   background-color: #fff;
   margin: 70px;
 }
@@ -18,18 +20,11 @@
   background-position: center;
   background-size: 90vw 80vh;
   background-repeat: no-repeat;
+  padding: 30px 290px;
 
-  margin: 20vh auto;
-  display: flex;
   justify-content: center;
+  display: flex;
 }
-/* button.booking-button {
-  color: rgb(255, 255, 255);
-  background-color: #e7ae46;
-  border-color: #e7ae46;
-  height: 48px;
-  margin: 0 50px;
-} */
 div.number-selector {
   width: 40%;
   margin: 0 20px;
@@ -40,9 +35,23 @@ div.reset-margin {
 }
 div.text-field {
   margin: 0 20px;
-  
 }
-.date-picker-container{
+.date-picker-container {
   display: flex;
 }
-
+.reservation-panel-button {
+  margin-top: 20px;
+  align-self: center;
+}
+.reserve-text {
+  font-weight: 300;
+  font-size: 29px;
+}
+.orange-line {
+  background-color: #e7ae46;
+  width: 100px;
+  height: 2px;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}

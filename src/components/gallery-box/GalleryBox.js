@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import kid from "../../images/kid.jpg"
 import fireplace from "../../images/fireplace.jpg"
-import livingroom from "../../images/livingroom.jpg"
+import lamp from "../../images/lamp.jpg"
+import mirror from "../../images/mirror.jpeg"
 import "./GalleryBox.css";
 
 
@@ -10,14 +10,14 @@ class GalleryBox extends Component {
         let chosenPicture;
 
         switch(this.props.picture){
-            case "kid":
-                chosenPicture=kid;
-                break;
             case "fireplace":
                 chosenPicture=fireplace;
                 break;
-            case "livingroom":
-                chosenPicture=livingroom;
+            case "lamp":
+                chosenPicture=lamp;
+                break;
+            case "mirror":
+                chosenPicture=mirror;
                 break;
     
 

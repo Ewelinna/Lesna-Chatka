@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./ReservationPanel.css";
-import Button from "@material-ui/core/Button";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -61,9 +60,14 @@ class ReservationPanel extends Component {
     const { selectedDateFrom, selectedDateTo } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <div className="reservation-page-container">
+      <div className="reserve-text">
+      <p>Wprowadź dane do rezerwacji</p>
+      </div>
+      <div className="orange-line"></div>
+     
         <div className="background-image">
-          <div className="reservation-panel">
+          <form onSubmit={this.handleSubmit} className="reservation-panel">
             <MuiPickersUtilsProvider
               utils={DateFnsUtils}
               className="day-picker"
@@ -127,14 +131,12 @@ class ReservationPanel extends Component {
                 </Select>
               </FormControl>
             </div>
-            <ButtonItem buttonName={"Rezerwuj"} onClick={this.handleSubmit}/>
-
-            {/*<Button variant="contained" className="booking-button">
-              Rezerwuj
-                  </Button>*/}
-          </div>
+            <div className="reservation-panel-button">
+            <ButtonItem  buttonName={"Rezerwuj"} onClick={this.handleSubmit}/>
+            </div>
+            </form>
         </div>
-      </form>
+      </div>
     );
   }
 }

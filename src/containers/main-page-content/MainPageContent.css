@@ -1,0 +1,21 @@
+.header-icon-container {
+  background-color: #b8a390;
+}
+.icon-header h1 {
+  font-weight: 100;
+  padding-top: 40px;
+  font-family: "Lato";
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.interior-picture img {
+  width: 100%;
+  height: auto;
+}

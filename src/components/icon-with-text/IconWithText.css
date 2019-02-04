@@ -1,0 +1,32 @@
+
+.text-container {
+  /* background-color: #F8F3EF; */
+  /* background-color: #c5bcb3; */
+  /* background-color: #CBC4BC; */
+  background-color: #B8A390;
+}
+.icon-description-container{
+  padding:40px 20px;
+  text-align: center;
+}
+.single-icon{
+  
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  vertical-align: middle;
+  padding: 20px;
+  box-shadow: 0px 0px 3px rgb(252, 249, 249);
+  margin-bottom: 20px;
+}
+.icon-description{
+  font-family: "Lato";
+  font-weight: 100;
+  color: #fff;
+  font-size: 18px;
+  
+}
+
+
