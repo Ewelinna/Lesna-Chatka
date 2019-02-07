@@ -1,5 +1,7 @@
-.price-box-container{
+.kiwi{
     width:20vw;
-    height:25vh;
+    height:40vh;
     border: 2px solid black;
+    margin:40px;
+    
 }

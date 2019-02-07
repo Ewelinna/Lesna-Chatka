@@ -9,6 +9,7 @@ import TextField from "@material-ui/core/TextField";
 import ButtonItem from "../../components/button-item/ButtonItem";
 import { MuiPickersUtilsProvider, DatePicker } from "material-ui-pickers";
 import axios from "axios";
+import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
 
 class ReservationPanel extends Component {
   constructor(props) {
@@ -64,7 +65,7 @@ class ReservationPanel extends Component {
       <div className="reserve-text">
       <p>Wprowadź dane do rezerwacji</p>
       </div>
-      <div className="orange-line"></div>
+     <HorizontalLine/>
      
         <div className="background-image">
           <form onSubmit={this.handleSubmit} className="reservation-panel">

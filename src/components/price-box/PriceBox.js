@@ -4,11 +4,11 @@ import "./PriceBox.css"
 class PriceBox extends Component{
 render(){
     return(
-        <div className="price-box-container">
-        <span>{this.props.date}</span>
-        <div></div>
-        <span>{this.props.price}</span>
-        <span>{this.props.conditions}</span>
+        <div className="kiwi">
+        <span className="booking-date">{this.props.date}</span>
+        <div className="horizontal-line"></div>
+        <span className="booking-price">{this.props.price}</span>
+        <span className="booking-conditions">{this.props.conditions}</span>
         </div>
     )
 }

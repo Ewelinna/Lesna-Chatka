@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './GalleryBoxes.css';
 import GalleryBox from '../../components/gallery-box/GalleryBox';
+import HorizontalLine from '../../components/horizontal-line/HorizontalLine'
 
 class GalleryBoxes extends Component {
     render() {
@@ -11,7 +12,7 @@ class GalleryBoxes extends Component {
                         Leśna Chatka jest idealnym miejscem dla tych, którzy pragną uciec od miejskiego <br/> zgiełku i odpocząć w otoczeniu natury.
                     </p>
                 </div>
-                <div className="horizontal-line"></div>
+                <HorizontalLine />
 
                 <div className="container-boxes">
                     <GalleryBox picture="fireplace"/>
