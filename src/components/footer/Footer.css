@@ -1,0 +1,11 @@
+.footer-container{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: "Lato";
+    font-weight: 300;
+    justify-content: flex-start;
+}
+.footer-container p{
+    margin: 20px;
+}

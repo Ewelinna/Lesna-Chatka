@@ -11,7 +11,9 @@ class NavBar extends Component {
           <MenuItem name={"HOME"} />
         </Link>
         <MenuItem name={"GALERIA"} />
+        <Link to="/cennik/">
         <MenuItem name={"CENNIK"} />
+        </Link>
         <MenuItem name={"OKOLICA"} />
         <MenuItem name={"KONTAKT"} />
       </ul>

@@ -5,7 +5,7 @@ class MenuItem extends Component{
     render(){
         return(
             <li className="nav-item">
-                <a href="#">{this.props.name}</a>
+                <span>{this.props.name}</span>
             </li>
         )
     }

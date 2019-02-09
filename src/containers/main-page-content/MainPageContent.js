@@ -3,6 +3,7 @@ import "./MainPageContent.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconWithText from "../../components/icon-with-text/IconWithText";
 import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
+import Footer from "../../components/footer/Footer";
 
 class MainPageContent extends React.Component {
   render() {
@@ -55,6 +56,14 @@ class MainPageContent extends React.Component {
         <div className="interior-picture">
           <img src={require("../../images/interior.jpg")} alt="Interior" />
         </div>
+
+        <Footer
+          address={"Leśna Chatka, ul. Leśna 1, 82-000 Mirawy"}
+          phone={"T: +48 123 321 123"}
+          email={"E: lesnachatka@gmail.com"}
+          media={<FontAwesomeIcon icon="ship" size="1x" color="black" />}
+        />
+        
       </div>
     );
   }

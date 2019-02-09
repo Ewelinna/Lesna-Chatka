@@ -3,6 +3,7 @@ import "./MainPageHeader.css";
 import MenuItem from "../../components/menu-item/MenuItem";
 import LogoItem from "../../components/logo/LogoItem";
 import ButtonItem from "../../components/button-item/ButtonItem";
+import { Link } from "react-router-dom";
 class MenuBar extends Component {
   render() {
     return (
@@ -10,7 +11,9 @@ class MenuBar extends Component {
         <ul className="container-menu">
           <MenuItem name={"HOME"} />
           <MenuItem name={"GALERIA"} />
-          <MenuItem name={"CENNIK"} />
+          <Link to="/cennik/">
+            <MenuItem name={"CENNIK"} />
+          </Link>
           <MenuItem name={"OKOLICA"} />
           <MenuItem name={"KONTAKT"} />
         </ul>

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+ 
 }
 .background-img {
   background-image: url("../../images/house21.jpg");
