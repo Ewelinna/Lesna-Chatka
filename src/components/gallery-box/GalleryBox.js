@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import fireplace from "../../images/fireplace.jpg"
 import lamp from "../../images/lamp.jpg"
 import mirror from "../../images/mirror.jpeg"
-import "./GalleryBox.css";
+import "./GalleryBox.scss";
 
 
 class GalleryBox extends Component {

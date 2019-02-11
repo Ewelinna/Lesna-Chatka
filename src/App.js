@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import MainPageHeader from "./containers/main-page-header/MainPageHeader";
 import GalleryBoxes from "./containers/gallery-boxes/GalleryBoxes";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
@@ -17,9 +17,13 @@ library.add(faSwimmer, faBath, faBed, faTree,faShip, faPaw);
 
 
 
+
 class App extends Component {
+ 
+
   render() {
     return (
+     
       <Router>
         <div>
           <Switch>
@@ -32,6 +36,7 @@ class App extends Component {
           </Switch>
         </div>
       </Router>
+      
     );
   }
 }

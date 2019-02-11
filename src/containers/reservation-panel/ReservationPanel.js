@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ReservationPanel.css";
+import "./ReservationPanel.scss";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";

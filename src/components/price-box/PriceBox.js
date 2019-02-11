@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./PriceBox.css";
+import "./PriceBox.scss";
 
 class PriceBox extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./MainPageContent.css";
+import "./MainPageContent.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconWithText from "../../components/icon-with-text/IconWithText";
 import HorizontalLine from "../../components/horizontal-line/HorizontalLine";

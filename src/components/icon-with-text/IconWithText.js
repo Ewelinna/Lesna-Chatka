@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./IconWithText.css";
+import "./IconWithText.scss";
 
 
 class IconWithText extends React.Component {

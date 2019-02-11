@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./AdminBookingPanel.css";
+import "./AdminBookingPanel.scss";
 import AdminBookingItem from "../../components/admin-booking-item/AdminBookingItem";
 import axios from "axios";
 

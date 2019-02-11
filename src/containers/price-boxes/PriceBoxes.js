@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PriceBox from "../../components/price-box/PriceBox";
-import "./PriceBoxes.css";
+import "./PriceBoxes.scss";
 import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
 
 const PriceBoxes = () => {

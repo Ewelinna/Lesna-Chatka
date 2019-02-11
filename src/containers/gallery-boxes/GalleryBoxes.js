@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './GalleryBoxes.css';
+import './GalleryBoxes.scss';
 import GalleryBox from '../../components/gallery-box/GalleryBox';
 import HorizontalLine from '../../components/horizontal-line/HorizontalLine'
 

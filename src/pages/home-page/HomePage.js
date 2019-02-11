@@ -7,6 +7,7 @@ import MainPageContent from '../../containers/main-page-content/MainPageContent'
 export default function HomePage() {
   return (
     <div>
+    
       <MainPageHeader />
       <GalleryBoxes />
       <MainPageContent/>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ButtonItem.css";
+import "./ButtonItem.scss";
 import { Link } from "react-router-dom";
 
 class ButtonItem extends Component {

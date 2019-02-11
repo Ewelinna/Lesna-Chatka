@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminBookingItem.css";
+import "./AdminBookingItem.scss";
 
 const AdminBookingItem = props => {
   return (

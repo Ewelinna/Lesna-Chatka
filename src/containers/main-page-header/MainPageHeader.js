@@ -1,11 +1,35 @@
 import React, { Component } from "react";
-import "./MainPageHeader.css";
+import "./MainPageHeader.scss";
 import MenuItem from "../../components/menu-item/MenuItem";
 import LogoItem from "../../components/logo/LogoItem";
 import ButtonItem from "../../components/button-item/ButtonItem";
+import NavBar from "../../components/nav-bar/NavBar";
 import { Link } from "react-router-dom";
-class MenuBar extends Component {
+class MainPageHeader extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { navOpacity: 0 };
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.updateNavOpacity);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.updateNavOpacity);
+  }
+  updateNavOpacity=()=>{
+    console.log(window.scrollY);
+    
+      if(window.scrollY>95){
+        this.setState({navOpacity:0.8});
+      }
+      else{
+        this.setState({navOpacity:0});
+      }
+    
+  }
   render() {
+    
     return (
       <header className="background-img">
         <ul className="container-menu">
@@ -25,8 +49,11 @@ class MenuBar extends Component {
         <div className="button-item">
           <ButtonItem buttonName={"Rezerwuj"} />
         </div>
+
+      <NavBar opacity={ this.state.navOpacity }/>
+
       </header>
     );
   }
 }
-export default MenuBar;
+export default MainPageHeader ;

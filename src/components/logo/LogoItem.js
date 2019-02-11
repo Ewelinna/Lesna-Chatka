@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './LogoItem.css';
+import './LogoItem.scss';
 class LogoItem extends Component{
     render(){
         return(

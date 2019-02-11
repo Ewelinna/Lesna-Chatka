@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./HorizontalLine.css";
+import "./HorizontalLine.scss";
 
 const HorizontalLine =()=>{
     return(

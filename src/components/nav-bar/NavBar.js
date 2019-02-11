@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import MenuItem from "../menu-item/MenuItem";
-import "./NavBar.css";
+import "./NavBar.scss";
 import { Link } from "react-router-dom";
 
 class NavBar extends Component {
+    
   render() {
+
+    const opacity = (this.props.opacity) ? Math.max(this.props.opacity, 0.2) : 0;
+   
     return (
-      <ul className="nav-bar-item">
+      <ul className="nav-bar-item" style={{opacity}}>
         <Link to="/">
           <MenuItem name={"HOME"} />
         </Link>
