@@ -8,6 +8,7 @@ import HomePage from "./pages/home-page/HomePage";
 import AdminBookingPage from "./pages/admin-booking-page/AdminBookingPage";
 import ReservationPage from "./pages/reservation-page/ReservationPage";
 import PricePage from "./pages/price-page/PricePage";
+import GalleryPage from "./pages/gallery-page/GalleryPage";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSwimmer, faBath, faBed,faTree,faShip, faPaw } from '@fortawesome/free-solid-svg-icons'
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path="/admin/" component={AdminBookingPage} />
             <Route path="/rezerwacja/" component={ReservationPage} />
             <Route path="/cennik/" component={PricePage} />
+            <Route path="/galeria/"component={GalleryPage}/>
             <Route path="/" component={HomePage} />
          
             

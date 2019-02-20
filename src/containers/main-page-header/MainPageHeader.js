@@ -11,6 +11,7 @@ class MainPageHeader extends Component {
     this.state = { navOpacity: 0 };
   }
   componentDidMount() {
+    
     window.addEventListener('scroll', this.updateNavOpacity);
   }
 

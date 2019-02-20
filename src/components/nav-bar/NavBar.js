@@ -4,19 +4,29 @@ import "./NavBar.scss";
 import { Link } from "react-router-dom";
 
 class NavBar extends Component {
-    
-  render() {
+  calculateOpacity = () => {
+    if (this.props.opacity === undefined) {
+      return 1;
+    }
+    else{
+      return this.props.opacity;
+    }
 
-    const opacity = (this.props.opacity) ? Math.max(this.props.opacity, 0.2) : 0;
-   
+  };
+  render() {
+    
+    const opacity = this.calculateOpacity();
+    
     return (
-      <ul className="nav-bar-item" style={{opacity}}>
+      <ul className="nav-bar-item" style={{ opacity }}>
         <Link to="/">
           <MenuItem name={"HOME"} />
         </Link>
+        <Link to="/galeria">
         <MenuItem name={"GALERIA"} />
+        </Link>
         <Link to="/cennik/">
-        <MenuItem name={"CENNIK"} />
+          <MenuItem name={"CENNIK"} />
         </Link>
         <MenuItem name={"OKOLICA"} />
         <MenuItem name={"KONTAKT"} />

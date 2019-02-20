@@ -15,9 +15,15 @@
   flex-wrap: wrap;
 }
 
-.interior-picture img {
-  width: 100%;
-  height: auto;
+.interior-picture{
+ background-image:url("../../images/interior.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ width: 100%;
+ height: 70vh;
+ 
+ 
 }
 .about-the-place-text {
   display: flex;

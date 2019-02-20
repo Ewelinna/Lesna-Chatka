@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IconWithText from "../../components/icon-with-text/IconWithText";
 import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
 import Footer from "../../components/footer/Footer";
+import Zoom from "react-reveal/Zoom";
 
 class MainPageContent extends React.Component {
   render() {
@@ -41,21 +42,20 @@ class MainPageContent extends React.Component {
           <h1>Kilka słów o nas</h1>
 
           <HorizontalLine />
-
-          <p>
-            Leśna Chatka to klimatyczny, całoroczny domek znajdujący się w
-            spokojnej miejscowości Mirawy w województwie Lubelskim. Położony
-            jest w samym centrum parku krajobrazowego wśród otaczających go
-            jezior, łąk i lasów. Tutaj każdy znajdzie coś dla siebie. Jeżeli
-            poszukujesz spokoju, pięknych krajobrazów, bliskiego kontaktu z
-            przyrodą oraz odrobiny luksusu, z pewnością odnajdziesz je u nas.
-            Serdecznie zapraszamy!
-          </p>
+          <Zoom>
+            <p>
+              Leśna Chatka to klimatyczny, całoroczny domek znajdujący się w
+              spokojnej miejscowości Mirawy w województwie Lubelskim. Położony
+              jest w samym centrum parku krajobrazowego wśród otaczających go
+              jezior, łąk i lasów. Tutaj każdy znajdzie coś dla siebie. Jeżeli
+              poszukujesz spokoju, pięknych krajobrazów, bliskiego kontaktu z
+              przyrodą oraz odrobiny luksusu, z pewnością odnajdziesz je u nas.
+              Serdecznie zapraszamy!
+            </p>
+          </Zoom>
         </div>
 
-        <div className="interior-picture">
-          <img src={require("../../images/interior.jpg")} alt="Interior" />
-        </div>
+        <div className="interior-picture" />
 
         <Footer
           address={"Leśna Chatka, ul. Leśna 1, 82-000 Mirawy"}
@@ -63,7 +63,6 @@ class MainPageContent extends React.Component {
           email={"E: lesnachatka@gmail.com"}
           media={<FontAwesomeIcon icon="ship" size="1x" color="black" />}
         />
-        
       </div>
     );
   }

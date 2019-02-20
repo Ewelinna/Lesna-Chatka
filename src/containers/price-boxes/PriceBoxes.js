@@ -4,6 +4,7 @@ import "./PriceBoxes.scss";
 import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
 
 const PriceBoxes = () => {
+  
   return (
     <div>
       <div className="price-text">
@@ -29,6 +30,7 @@ const PriceBoxes = () => {
           price={"500zł/doba"}
           conditions={"Minimum 3 noce"}
         />
+       
       </div>
     </div>
   );
