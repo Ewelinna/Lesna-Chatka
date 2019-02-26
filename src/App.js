@@ -16,9 +16,6 @@ library.add(faSwimmer, faBath, faBed, faTree,faShip, faPaw);
 
 
 
-
-
-
 class App extends Component {
  
 
@@ -33,8 +30,6 @@ class App extends Component {
             <Route path="/cennik/" component={PricePage} />
             <Route path="/galeria/"component={GalleryPage}/>
             <Route path="/" component={HomePage} />
-         
-            
           </Switch>
         </div>
       </Router>

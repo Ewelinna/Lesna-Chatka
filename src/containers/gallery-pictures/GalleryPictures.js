@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./GalleryPictures.scss";
 import GalleryPicture from "../../components/gallery-picture/GalleryPicture";
+import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
 import kitchen from "../../images/kitchen.jpg";
 import coffe from "../../images/coffe.jpg";
 import man from "../../images/man.jpg";
@@ -15,26 +16,33 @@ import bathroom from "../../images/bathroom.jpg";
 class GalleryPictures extends Component {
   render() {
     return (
-      <div className="gallery-pictures-container">
-        <GalleryPicture singlePicture={kitchen} />
+      <div>
+        <div className="gallery-text">
+          <p>Cennik</p>
+          <HorizontalLine />
+        </div>
 
-        <GalleryPicture singlePicture={coffe} />
+        <div className="gallery-pictures-container">
+          <GalleryPicture singlePicture={kitchen} />
 
-        <GalleryPicture singlePicture={man} />
+          <GalleryPicture singlePicture={coffe} />
 
-        <GalleryPicture singlePicture={porch} />
+          <GalleryPicture singlePicture={man} />
 
-        <GalleryPicture singlePicture={room} />
+          <GalleryPicture singlePicture={porch} />
 
-        <GalleryPicture singlePicture={salon} />
+          <GalleryPicture singlePicture={room} />
 
-        <GalleryPicture singlePicture={window} />
+          <GalleryPicture singlePicture={salon} />
 
-        <GalleryPicture singlePicture={livingroom} />
+          <GalleryPicture singlePicture={window} />
 
-        <GalleryPicture singlePicture={kayak} />
+          <GalleryPicture singlePicture={livingroom} />
 
-        <GalleryPicture singlePicture={bathroom} />
+          <GalleryPicture singlePicture={kayak} />
+
+          <GalleryPicture singlePicture={bathroom} />
+        </div>
       </div>
     );
   }

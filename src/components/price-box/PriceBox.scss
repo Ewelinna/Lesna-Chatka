@@ -1,5 +1,5 @@
 .price-box-container {
-  width: 22vw;
+  flex-basis: 22vw;
   height: 45vh;
   border: 1px solid black;
   margin: 40px;
@@ -26,4 +26,14 @@
 }
 .booking-conditions {
   font-size: 17px;
+}
+@media only screen and (max-width: 600px) {
+  .price-box-container {
+    flex-basis: 60vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .price-box-container {
+    flex-basis: 40vw;
+  }
 }

@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-
 import NavBar from "../../components/nav-bar/NavBar";
 import ReservationPanel from "../../containers/reservation-panel/ReservationPanel";
-
-
 
 class ReservationPage extends Component {
   render() {
@@ -11,9 +8,7 @@ class ReservationPage extends Component {
       <div>
         <NavBar />
         <ReservationPanel/>
-        
-
-      </div>
+       </div>
     );
   }
 }

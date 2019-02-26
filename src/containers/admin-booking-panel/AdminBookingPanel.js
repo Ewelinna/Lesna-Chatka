@@ -12,7 +12,7 @@ class AdminBookingPanel extends Component {
   }
 
   componentDidMount() {
-    axios.get("http://localhost:3001/reservations").then(res => {
+    axios.get(process.env.BACKEND_URL + "/reservations").then(res => {
       const reservationsToShow = res.data;
       this.setState({ reservationsToShow });
     });

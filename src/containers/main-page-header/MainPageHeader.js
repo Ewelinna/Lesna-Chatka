@@ -11,37 +11,41 @@ class MainPageHeader extends Component {
     this.state = { navOpacity: 0 };
   }
   componentDidMount() {
-    
-    window.addEventListener('scroll', this.updateNavOpacity);
+    window.addEventListener("scroll", this.updateNavOpacity);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.updateNavOpacity);
+    window.removeEventListener("scroll", this.updateNavOpacity);
   }
-  updateNavOpacity=()=>{
+  updateNavOpacity = () => {
     console.log(window.scrollY);
-    
-      if(window.scrollY>95){
-        this.setState({navOpacity:0.8});
-      }
-      else{
-        this.setState({navOpacity:0});
-      }
-    
-  }
+
+    if (window.scrollY > 95) {
+      this.setState({ navOpacity: 0.8 });
+    } else {
+      this.setState({ navOpacity: 0 });
+    }
+  };
   render() {
-    
     return (
       <header className="background-img">
-        <ul className="container-menu">
-          <MenuItem name={"HOME"} />
-          <MenuItem name={"GALERIA"} />
+        <div className="container-menu">
+          <Link to="/">
+            <MenuItem name={"HOME"} />
+          </Link>
+          <Link to="/galeria">
+            <MenuItem name={"GALERIA"} />
+          </Link>
           <Link to="/cennik/">
             <MenuItem name={"CENNIK"} />
           </Link>
-          <MenuItem name={"OKOLICA"} />
-          <MenuItem name={"KONTAKT"} />
-        </ul>
+          <Link to="#">
+            <MenuItem name={"OKOLICA"} />
+          </Link>
+          <Link to="#">
+            <MenuItem name={"KONTAKT"} />
+          </Link>
+        </div>
 
         <div className="logo-item">
           <LogoItem logoText={"Leśna Chatka"} />
@@ -51,10 +55,9 @@ class MainPageHeader extends Component {
           <ButtonItem buttonName={"Rezerwuj"} />
         </div>
 
-      <NavBar opacity={ this.state.navOpacity }/>
-
+        <NavBar opacity={this.state.navOpacity} />
       </header>
     );
   }
 }
-export default MainPageHeader ;
+export default MainPageHeader;

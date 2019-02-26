@@ -21,14 +21,11 @@ class GalleryBoxes extends Component {
 
         <div className="container-boxes">
           <GalleryPicture singlePicture={fireplace} />
-
           <GalleryPicture singlePicture={lamp} />
           <GalleryPicture singlePicture={mirror} />
         </div>
         <Link to="/galeria/" className="gallery-link">
-      
-            Odkryj więcej zdjęć >
-       
+          Odkryj więcej zdjęć >
         </Link>
       </div>
     );
