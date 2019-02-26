@@ -12,22 +12,24 @@ import window from "../../images/window.jpg";
 import livingroom from "../../images/livingroom.jpg";
 import kayak from "../../images/kayak.jpg";
 import bathroom from "../../images/bathroom.jpg";
+import bathroom2 from "../../images/bathroom2.jpg";
+import bedroom from "../../images/bedroom.jpg";
 
 class GalleryPictures extends Component {
   render() {
     return (
       <div>
         <div className="gallery-text">
-          <p>Cennik</p>
+          <p>Galeria</p>
           <HorizontalLine />
         </div>
 
         <div className="gallery-pictures-container">
-          <GalleryPicture singlePicture={kitchen} />
+          <GalleryPicture singlePicture={bedroom} />
 
           <GalleryPicture singlePicture={coffe} />
 
-          <GalleryPicture singlePicture={man} />
+          <GalleryPicture singlePicture={kitchen} />
 
           <GalleryPicture singlePicture={porch} />
 
@@ -39,9 +41,13 @@ class GalleryPictures extends Component {
 
           <GalleryPicture singlePicture={livingroom} />
 
-          <GalleryPicture singlePicture={kayak} />
+          <GalleryPicture singlePicture={man} />
 
           <GalleryPicture singlePicture={bathroom} />
+
+          <GalleryPicture singlePicture={bathroom2}/>
+
+          <GalleryPicture singlePicture={kayak}/>
         </div>
       </div>
     );
