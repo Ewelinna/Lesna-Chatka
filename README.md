@@ -6,4 +6,4 @@ Lesna Chatka is a project I've created for the purpose of study. It's a booking 
 * Adjust page for the mobile devices
 * Add image preview
 * Customize callender
-* Add Surroundings and Contact components
+* Add Okolica and Kontakt components
