@@ -2,6 +2,17 @@ import React from "react";
 import "./AdminBookingItem.scss";
 
 const AdminBookingItem = props => {
+  // 2103199421:11 to 21.03
+  const formatDate=(date)=>{
+    const timestamp=Date.parse(date);
+    if(isNaN(timestamp)===false){
+      const d = new Date(date)
+      return d.toLocaleDateString()
+    }
+    else{
+      return date
+    }
+  }
   return (
     <div>
       <div className="reservation-admin">
@@ -11,10 +22,10 @@ const AdminBookingItem = props => {
             Zarezerwowane przez: <strong>{props.reservingUserName}</strong>
           </li>
           <li>
-            Zarezerwowane od: <strong>{props.reservingFrom} </strong>
+            Zarezerwowane od: <strong>{formatDate(props.reservingFrom)} </strong>
           </li>
           <li>
-            Zarezerwowane do: <strong>{props.reservingTo}</strong>
+            Zarezerwowane do: <strong>{formatDate(props.reservingTo)}</strong>
           </li>
         </span>
         <button className="button-delete" onClick={props.deleteEvent}>

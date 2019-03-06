@@ -10,6 +10,7 @@ import ButtonItem from "../../components/button-item/ButtonItem";
 import { MuiPickersUtilsProvider, DatePicker } from "material-ui-pickers";
 import axios from "axios";
 import HorizontalLine from "../../components/horizontal-line/HorizontalLine";
+import { BACKEND_BASE_URL } from "../../services/reservationsService";
 
 class ReservationPanel extends Component {
   constructor(props) {
@@ -37,21 +38,18 @@ class ReservationPanel extends Component {
     });
   };
 
-  
-
   handleSubmit = event => {
     event.preventDefault();
-    console.log("halooo");
-    
+
     const guest = {
-      name: this.state.name,
-      email:this.state.email,
-      numberOfGuests:this.state.numberOfGuests,
-      selectedDateFrom:this.state.selectedDateFrom,
-      selectedDateTo:this.state.selectedDateTo
+      reservingUser: this.state.name,
+      email: this.state.email,
+      nrOfGuests: this.state.numberOfGuests,
+      reservingFrom: this.state.selectedDateFrom,
+      reservingTo: this.state.selectedDateTo
     };
 
-    axios.post(`http://localhost:3001/reservations`, { guest }).then(res => {
+    axios.post(`${BACKEND_BASE_URL}/reservations`, guest).then(res => {
       console.log(res);
       console.log(res.data);
     });
@@ -62,11 +60,11 @@ class ReservationPanel extends Component {
 
     return (
       <div className="reservation-page-container">
-      <div className="reserve-text">
-      <p>Wprowadź dane do rezerwacji</p>
-      </div>
-     <HorizontalLine/>
-     
+        <div className="reserve-text">
+          <p>Wprowadź dane do rezerwacji</p>
+        </div>
+        <HorizontalLine />
+
         <div className="background-image">
           <form onSubmit={this.handleSubmit} className="reservation-panel">
             <MuiPickersUtilsProvider
@@ -133,9 +131,9 @@ class ReservationPanel extends Component {
               </FormControl>
             </div>
             <div className="reservation-panel-button">
-            <ButtonItem  buttonName={"Rezerwuj"} onClick={this.handleSubmit}/>
+              <ButtonItem buttonName={"Rezerwuj"} onClick={this.handleSubmit} />
             </div>
-            </form>
+          </form>
         </div>
       </div>
     );

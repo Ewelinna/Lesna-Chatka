@@ -29,7 +29,7 @@ class MainPageHeader extends Component {
   render() {
     return (
       <header className="background-img">
-        <div className="container-menu">
+        <ul className="container-menu">
           <Link to="/">
             <MenuItem name={"HOME"} />
           </Link>
@@ -45,7 +45,7 @@ class MainPageHeader extends Component {
           <Link to="#">
             <MenuItem name={"KONTAKT"} />
           </Link>
-        </div>
+        </ul>
 
         <div className="logo-item">
           <LogoItem logoText={"Leśna Chatka"} />

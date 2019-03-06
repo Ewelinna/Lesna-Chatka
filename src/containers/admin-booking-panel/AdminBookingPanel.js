@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./AdminBookingPanel.scss";
 import AdminBookingItem from "../../components/admin-booking-item/AdminBookingItem";
 import axios from "axios";
+import { BACKEND_BASE_URL } from "../../services/reservationsService";
 
 class AdminBookingPanel extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class AdminBookingPanel extends Component {
   }
 
   componentDidMount() {
-    axios.get(process.env.BACKEND_URL + "/reservations").then(res => {
+    axios.get(`${BACKEND_BASE_URL}/reservations`).then(res => {
       const reservationsToShow = res.data;
       this.setState({ reservationsToShow });
     });
@@ -20,7 +21,7 @@ class AdminBookingPanel extends Component {
   deleteReservationItem = (id, e) => {
     console.log(id);
 
-    axios.delete(`http://localhost:3001/reservations/${id}`).then(res => {
+    axios.delete(`${BACKEND_BASE_URL}/reservations/${id}`).then(res => {
       let reservationsToShow = Object.assign(
         [],
         this.state.reservationsToShow
