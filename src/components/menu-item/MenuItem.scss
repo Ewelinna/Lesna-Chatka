@@ -1,23 +1,18 @@
-.nav-item > span {
+.nav-item {
+  list-style-type: none;
+}
+.nav-item > a {
   color: #fff;
-  text-decoration: none;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 18px;
   min-width: 113px;
   display: block;
-  padding: 26px 45px;
-
-}
-.nav-item {
-  list-style-type: none;
-}
-.nav-item > span:hover {
-  text-decoration: underline;
+  transition: 0.5s;
 }
 
-@media (max-width: 1024px) {
-  .nav-item {
-    flex-direction: column;
-  }
+.nav-item > a:hover {
+color:#e7ae46;
 }
+
+

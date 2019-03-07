@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import NavBar from "../../components/nav-bar/NavBar";
 import GalleryPictures from "../../containers/gallery-pictures/GalleryPictures";
 

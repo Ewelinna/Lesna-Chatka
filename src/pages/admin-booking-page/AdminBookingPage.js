@@ -1,5 +1,5 @@
 import AdminBookingPanel from "../../containers/admin-booking-panel/AdminBookingPanel";
-import React, { Component } from "react";
+import React from "react";
 
 export default function HomePage() {
   return (
